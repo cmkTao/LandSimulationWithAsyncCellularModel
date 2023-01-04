@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>434</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>土地模拟工具</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/img.qrc">
+    <normaloff>:/img/地球.png</normaloff>:/img/地球.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>One/Two years for training</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="rb_one">
+         <property name="text">
+          <string>One year</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="rb_two">
+         <property name="text">
+          <string>Two years</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Tools</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="4">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="btn_open">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="toolTip">
+          <string>打开TIF图像</string>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="locale">
+          <locale language="Chinese" country="China"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources/img.qrc">
+           <normaloff>:/img/打开文件夹.png</normaloff>:/img/打开文件夹.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btn_ana">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>对比两张TIF文件的不同点</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources/img.qrc">
+           <normaloff>:/img/结果对比分析.png</normaloff>:/img/结果对比分析.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btn_CA_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>验证模拟结果</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources/img.qrc">
+           <normaloff>:/img/验证码.png</normaloff>:/img/验证码.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>ANN-CA</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btn_cleanData">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>清洗数据</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources/img.qrc">
+           <normaloff>:/img/清洗记录.png</normaloff>:/img/清洗记录.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="btn_ANN">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>神经网络计算适应性概率</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources/img.qrc">
+           <normaloff>:/img/ann.png</normaloff>:/img/ann.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btn_CA">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>80</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>元细胞自动机进行模拟</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources/img.qrc">
+           <normaloff>:/img/ca.png</normaloff>:/img/ca.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>64</width>
+           <height>64</height>
+          </size>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>true</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Simulation Areas</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QComboBox" name="cb_areas">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>584</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>打开</string>
+    </property>
+    <addaction name="action_openTif"/>
+    <addaction name="action_cmpTif"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>模型</string>
+    </property>
+    <addaction name="actionANN"/>
+    <addaction name="actionCA"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>验证</string>
+    </property>
+    <addaction name="actionKappa_Fom"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="action_genProbImage"/>
+    <addaction name="actioncleanLanImage"/>
+    <addaction name="actionBatchRunSim_Eval"/>
+    <addaction name="actionduplicateConfig"/>
+    <addaction name="actionuseOfficalFLUSVersion"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_openTif">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/打开文件夹.png</normaloff>:/img/打开文件夹.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开tif文件</string>
+   </property>
+  </action>
+  <action name="action_cmpTif">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/结果对比分析.png</normaloff>:/img/结果对比分析.png</iconset>
+   </property>
+   <property name="text">
+    <string>对比tif文件</string>
+   </property>
+  </action>
+  <action name="actionANN">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/ann.png</normaloff>:/img/ann.png</iconset>
+   </property>
+   <property name="text">
+    <string>ANN</string>
+   </property>
+  </action>
+  <action name="actionCA">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/ca.png</normaloff>:/img/ca.png</iconset>
+   </property>
+   <property name="text">
+    <string>CA</string>
+   </property>
+  </action>
+  <action name="actionKappa_Fom">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/验证码.png</normaloff>:/img/验证码.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kappa &amp; Fom</string>
+   </property>
+  </action>
+  <action name="action_genProbImage">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/genProb.png</normaloff>:/img/genProb.png</iconset>
+   </property>
+   <property name="text">
+    <string>genProbsImage</string>
+   </property>
+  </action>
+  <action name="actioncleanLanImage">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/clean.png</normaloff>:/img/clean.png</iconset>
+   </property>
+   <property name="text">
+    <string>cleanLanImage</string>
+   </property>
+  </action>
+  <action name="actionBatchRunSim_Eval">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/batch.png</normaloff>:/img/batch.png</iconset>
+   </property>
+   <property name="text">
+    <string>BatchRunSim/Eval</string>
+   </property>
+  </action>
+  <action name="actionduplicateConfig">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/duplicate.png</normaloff>:/img/duplicate.png</iconset>
+   </property>
+   <property name="text">
+    <string>duplicateConfig</string>
+   </property>
+  </action>
+  <action name="actionuseOfficalFLUSVersion">
+   <property name="icon">
+    <iconset resource="resources/img.qrc">
+     <normaloff>:/img/settings.png</normaloff>:/img/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>settings</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources/img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

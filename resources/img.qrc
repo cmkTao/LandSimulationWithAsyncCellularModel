@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>Open.png</file>
+        <file>结果对比分析.png</file>
+        <file>打开文件夹.png</file>
+        <file>地球.png</file>
+        <file>地球2.png</file>
+        <file>分析 (1).png</file>
+        <file>分析.png</file>
+        <file>浏览.png</file>
+        <file>背景.jpg</file>
+        <file>ann.png</file>
+        <file>ca.png</file>
+        <file>验证码.png</file>
+        <file>03 神经网络.png</file>
+        <file>地理网格 (1).png</file>
+        <file>地理网格.png</file>
+        <file>验证码-选中.png</file>
+        <file>pause.png</file>
+        <file>start.png</file>
+        <file>stop.png</file>
+        <file>清洗统计.png</file>
+        <file>清洗记录.png</file>
+        <file>batch.png</file>
+        <file>clean.png</file>
+        <file>duplicate.png</file>
+        <file>genProb.png</file>
+        <file>settings.png</file>
+    </qresource>
+</RCC>
